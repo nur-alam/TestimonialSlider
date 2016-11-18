@@ -102,69 +102,109 @@
     }
 
 
-    
+img{
+	width: 100%;
+}
+
+.testimonial_area{
+	position: relative;
+	height: 350px;
+}
+
+.testimonial_parrent{
+	overflow: hidden;
+}
+.testimonial{
+}
+.each_testimonial{
+	width: 1140px;
+	float: left;
+}
 
 
+.testi_text{
+    text-align: left;
+    margin-top: 50px;
+}
 
-   
+.next_testimonial{
+    width: 125px;
+    height: 107px;
+    margin-top: 50px;
+    position: relative;
+    cursor: pointer;
+}
+.next_testimonial>a>img{
+	width: 100%;
+    height: 100%;
+} 
+.overlay{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    background: rgba(56, 55, 55,0.4);
+    text-align: center;
+}
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-/*  Responsive Design  */
-
-
-/*  Medium layout:1200px  */
-
-@media only screen and (min-width: 992px) and (max-width: 1200px){
-
-
-    
+.next_testimonial .fa-angle-right{
+	font-size: 108px;
+    color: #efefef;
+    opacity: 0.9;
 }
 
 
 
-/*  Tablet layout:768px  */
-
-@media only screen and (min-width: 768px) and (max-width: 991px){
-
-
-    
-}
+	
 
 
 
-/*  Mobile layout:768px  */
-@media only screen and (min-width:250px) and (max-width: 767px){
-
-  
-    
-}
 
 
 
-/* Wide  Mobile layout:768px  */
 
-@media only screen and (max-width: 480px){
-
+	/*  Responsive Design  */
 
 
-}
+	/*  Medium layout:1200px  */
 
-/* Wide  Mobile layout:768px  */
+	@media only screen and (min-width: 992px) and (max-width: 1200px){
 
-@media only screen and (max-width: 240px){
 
-  
-}
+
+	}
+
+
+
+	/*  Tablet layout:768px  */
+
+	@media only screen and (min-width: 768px) and (max-width: 991px){
+
+
+
+	}
+
+
+
+	/*  Mobile layout:768px  */
+	@media only screen and (min-width:250px) and (max-width: 767px){
+
+
+
+	}
+
+
+
+	/* Wide  Mobile layout:768px  */
+
+	@media only screen and (max-width: 480px){
+
+
+
+	}
+
+	/* Wide  Mobile layout:768px  */
+
+	@media only screen and (max-width: 240px){
+
+
+	}
