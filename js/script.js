@@ -29,40 +29,42 @@
 	
 	
 
-		/* next sliding function*/
-		function nextSlideing(){
+	/* next sliding function*/
+	function nextSlideing(){
 
-			/* getting the index of active li element*/
-			index = testimonial.find('.active').index();
-			
-			active_testi = testimonial.find('.active');
-			nextSlide = active_testi.next();
-			nextSlide.addClass('active');
-			active_testi.removeClass('active');
-			
-			
+		/* getting the index of active li element*/
+		index = testimonial.find('.active').index();
 
-			console.log(index);
+		active_testi = testimonial.find('.active');
+		nextSlide = active_testi.next();
+		nextSlide.addClass('active');
+		active_testi.removeClass('active');
 
-			testimonial.animate({'margin-left':'-='+each_testi_width},750,'swing',function(){
-				
-				//if active index is last li element then add active class to first li element
-				if(index===(testi_len-2)){
-					testimonial.find('.each_testimonial').removeClass('active');
-					testimonial.find('.each_testimonial:first').addClass('active');
-					testimonial.css('margin-left',0);
-				}
-			});
 
-		}
-	
-	
-		/* next cliking event*/
-		$(document).on('click','.next_testimonial',function(event){
-			event.preventDefault();
-			//console.log('next slider');
-			nextSlideing();
+
+		console.log(index);
+
+		testimonial.animate({'margin-left':'-='+each_testi_width},750,'swing',function(){
+
+			//if active index is last li element then add active class to first li element
+			if(index===(testi_len-2)){
+				testimonial.find('.each_testimonial').removeClass('active');
+				testimonial.find('.each_testimonial:first').addClass('active');
+				testimonial.css('margin-left',0);
+			}
 		});
+		
+
+	}
+	
+	
+	
+	/* next cliking event*/
+	$(document).on('click','.next_testimonial',function(event){
+		event.preventDefault();
+		//console.log('next slider');
+		nextSlideing();
+	});
 	
 
 	
